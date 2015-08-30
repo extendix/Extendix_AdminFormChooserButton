@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      Tsvetan Stoychev <t.stoychev@extendix.com>
+ * @website     http://www.extendix.com
+ * @license     http://opensource.org/licenses/osl-3.0.php Open Software Licence 3.0 (OSL-3.0)
+ */
+-->
+<config>
+    <modules>
+        <Extendix_AdminFormChooserButton>
+            <version>0.0.1</version>
+        </Extendix_AdminFormChooserButton>
+    </modules>
+
+    <global>
+        <helpers>
+            <extendix_admin_form_chooser_button>
+                <class>Extendix_AdminFormChooserButton_Helper</class>
+            </extendix_admin_form_chooser_button>
+        </helpers>
+        <blocks>
+            <extendix_admin_form_chooser_button>
+                <class>Extendix_AdminFormChooserButton_Block</class>
+            </extendix_admin_form_chooser_button>
+        </blocks>
+    </global>
+
+    <default>
+        <extendix_admin_form_chooser_button>
+            <chooser_defaults>
+                <imageChooser>
+                    <input_label>Image</input_label>
+                    <button_text>Select Image...</button_text>
+                </imageChooser>
+                <catalog_product_widget_chooser>
+                    <input_label>Product</input_label>
+                    <button_text>Select Product...</button_text>
+                </catalog_product_widget_chooser>
+                <catalog_category_widget_chooser>
+                    <input_label>Category</input_label>
+                    <button_text>Select Category...</button_text>
+                </catalog_category_widget_chooser>
+                <cms_block_widget_chooser>
+                    <input_label>Block</input_label>
+                    <button_text>Select Block...</button_text>
+                </cms_block_widget_chooser>
+                <cms_page_widget_chooser>
+                    <input_label>CMS Page</input_label>
+                    <button_text>Select CMS Page...</button_text>
+                </cms_page_widget_chooser>
+                <default>
+                    <input_label>Element</input_label>
+                    <button_text>Select...</button_text>
+                </default>
+            </chooser_defaults>
+        </extendix_admin_form_chooser_button>
+    </default>
+
+</config>
